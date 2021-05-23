@@ -1,0 +1,28 @@
+---
+layout: default
+title: Home
+---
+{% include header.html %}
+
+<div class="control">
+    <div class="left">
+        <div class="subNav">
+        	{% for post in site.posts %}
+        		<div class="part1 part"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></div>
+        	{% endfor %}
+        </div>
+    </div>
+    <div class="content">
+        <a name="part1"></a>
+        <div class="container1">
+            <div class="text1 text">
+                <div class="title1 title">
+                	<p>This web is our CISC3003 final project. It is about the html,CSS and JavaScript we learn in this course.</p>
+                	
+            	</div>
+            </div>
+        </div>    
+    </div>	
+</div>
+
+{% include footer.html %}

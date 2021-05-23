@@ -1,0 +1,31 @@
+---
+layout: default
+title: Start with Javascript
+---
+{% include header.html %}
+
+<div class="control">
+    <div class="left">
+        <div class="subNav">
+        	{% for post in site.posts %}
+        		<div class="part1 part"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></div>
+        	{% endfor %}
+        </div>
+    </div>
+    <div class="content">
+        <a name="part1"></a>
+        <div class="container1">
+            <div class="text1 text">
+                <div class="title1 title"><h2>Start with Javascript</h2></div>
+                	<h3>CISC3003 Practice 07: Art Store</h3>
+                	<div class="sample1">
+                        {% include cisc3003-practice07.html %}
+                    </div>
+            	</div>
+            </div>        
+        </div>
+    </div>	
+
+</div>
+
+{% include footer.html %}

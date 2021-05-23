@@ -1,0 +1,113 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: #eeeeee;
+}
+
+.control{
+  width: 95%;
+  height: auto;
+  margin: 0 auto;
+}
+.left,.content{
+  height: auto;
+  margin: 20px 5px;
+}
+.left{
+  width: 200px;
+  display: inline-block;
+  vertical-align: top;
+  
+}
+.subNav{
+  height: auto;
+  background-color: white;
+  padding: 10px;
+  width: 180px;
+  position: fixed;
+}
+.content{
+  width: 850px;
+  background-color: white;
+  display: inline-block;
+  
+}
+.part{
+  text-align: center;
+  line-height: 60px;
+  border-bottom: 1px solid #d9d9d9;
+  border-radius: 5px;
+  color: #000000;
+}
+a{
+  text-decoration: none;
+  color:black;
+  display: block;
+}
+.part:hover{
+  background: #eeeeee;
+  cursor: pointer;
+}
+.partend{
+  border: none;
+}
+.text{
+  line-height: 30px;
+  width: 80%;
+  margin: 25px auto;
+  height: auto;
+  min-height: 500px;
+}
+.container2,.container4{
+  background: #e5e5e5;
+}
+.title{
+  line-height: 40px;
+}
+.container2,.container4{
+  overflow: hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+ul,
+ol,
+li,
+blockquote {
+  position: relative;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+}
+p {
+  margin-top: 0;
+  margin-bottom: 1em;
+}
+
+code {
+  padding: 0.2em 0.15em;
+  font-weight: 400;
+  background-color: #f5f6fa;
+  border: 1px solid #eeebee;
+  border-radius: 4px;
+}
+
+div.highlighter-rouge {
+  padding: .75rem;
+  margin-top: 0;
+  margin-bottom: .75rem;
+  overflow-x: auto;
+  border-radius: 4px;
+  box-shadow: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+div.highlighter-rouge div.highlight, div.highlighter-rouge pre.highlight, div.highlighter-rouge code {
+  padding: 0;
+  margin: 0;
+  border: 0;
+}

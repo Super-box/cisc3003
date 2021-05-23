@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+　　<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+　　<title>Start with HTML</title>
+</head>
+<body>
+
+　　<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>CISC3003</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="/css/theme.css" rel="stylesheet" type="text/css">
+    <link href="/css/syntax.css" rel="stylesheet" type="text/css">
+    <link href="/css/style.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://cdn.staticfile.org/font-awesome/5.5.0/css/all.css">
+</head>
+<body>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">CISC3003</a>
+              </div>
+              <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class="active"><a href="/">Home</a></li>
+                    <li class="active visible-xs-block"><a href="/links.html">Links</a></li>
+                    <li class="active"><a href="/archive.html">Archive</a></li>
+                    <li class="active"><a href="/about.html">About</a></li>
+
+                </ul>
+              </div>
+        </div>
+    </div>
+</div>
+
+<div class="control">
+    <div class="left">
+        <div class="subNav">
+        	
+        		<div class="part1 part"><a href="/2021/05/10/html.html">Start with HTML</a></div>
+        	
+        		<div class="part1 part"><a href="/2021/05/10/css.html">Start with CSS</a></div>
+        	
+        		<div class="part1 part"><a href="/2021/05/10/Javascript.html">Start with Javascript</a></div>
+        	
+        </div>
+    </div>
+    <div class="content">
+        <a name="part1"></a>
+        <div class="container1">
+            <div class="text1 text">
+                <div class="title1 title"><h2>Start with HTML</h2></div>
+                	<h3>CISC3003 Practice 02: Share Your Travel Photos</h3>
+                	<p>In this Practice we learn how to use img tag</p>
+                	<li>Example for img
+                		<div class="language-yaml highlighter-rouge">
+                			<div class="highlight"><pre class="pre"><code>&lt;img src="/images/testlogo.png" alt="logo"&gt;</code></pre></div>
+                		</div>
+                	</li>
+                	<img src="/images/testlogo.png" alt="testlogo">
+                	<p>The first point is about Relative File Path and Absolute File Path</p>
+                	<img src="/images/HTMLFilePaths.png" width="100%" height=auto alt="HTMLFilePaths">
+            	</div>
+            </div>
+            <a name="part2"></a>
+            <div class="container2">
+                <div class="text2 text">
+                    <div class="title2 title"></div>
+                    <h3>CISC3003 Practice 04: Share Your Travel Photos</h3>
+                    <p>In this Practice we learn how to use table tag</p>
+                    <div class="sample">
+                        <!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CISC3003: Practice 04</title>
+    <link href="/css/sample.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Share Your Travels</h1>
+      <p>let us know where you've been</p>
+    </header>
+    <main>
+      <section>
+        <h2 style="display: none">This is a form</h2>
+        <form action="process.php">
+          <fieldset>
+            <legend>Photo Details</legend>
+            <table>
+              <tr>
+                <td colspan="2">
+                  <label for="title">Title</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Give your photo a decriptive name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="description"> Description </label>
+                  <br />
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    cols="61"
+                    placeholder="Adding a rich description will help with search results"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="continent">Continent</label>
+                  <br />
+                  <select name="continent" id="continent">
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="eu">Europe</option>
+                    <option value="NA">North America</option>
+                    <option value="SA">South America</option>
+                  </select>
+                  <br />
+                  <label for="country">Country</label>
+                  <br />
+                  <select name="country" id="country">
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="united-states">United States</option>
+                  </select>
+                  <br />
+                  <label for="city">City</label>
+                  <br />
+                  <select name="city" id="city">
+                    <option value="calgary">Calgary</option>
+                    <option value="montreal">Montreal</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="vancouver">Vancouver</option>
+                  </select>
+                  <br />
+                </td>
+                <td>
+                  <div class="wrapper">
+                    <label>Copyright?</label>
+                    <br />
+                    <input
+                      type="radio"
+                      name="reserved"
+                      id="reserved"
+                      value="reserved"
+                    />
+                    <label for="reserved">All rights reserved</label>
+                    <br />
+                    <input
+                      type="radio"
+                      name="commons"
+                      id="commons"
+                      value="commons"
+                    />
+                    <label for="commons">Creative Commons</label>
+                    <br />
+                  </div>
+                  <div class="wrapper">
+                    <label>Creative Commons Types</label>
+                    <br />
+                    <input type="checkbox" name="cc[]" value="1" />Attribution
+                    <br />
+                    <input type="checkbox" name="cc[]" value="2" />Noncommercial
+                    <br />
+                    <input type="checkbox" name="cc[]" value="3" />No Derivative
+                    Works <br />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="stripe">
+                    I accept the software license
+                    <input type="checkbox" name="accept-license" value="1" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="rate">Rate this photo: </label>
+                  <br />
+                  <input type="number" min="1" max="5" name="rate" id="rate" />
+                  <br />
+                  <label for="color">Color Collection:</label>
+                  <br />
+                  <input type="color" name="color" id="color" />
+                  <br />
+                </td>
+                <td>
+                  <div class="wrapper">
+                    <label for="date">Date taken:</label>
+                    <br />
+                    <input type="date" name="date" id="date" />
+                    <br />
+                    <label for="time">Time taken:</label>
+                    <br />
+                    <input type="time" name="time" id="time" />
+                    <br />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="stripe">
+                    <input type="submit" value="Submit" class="rounded" />
+                    <input type="reset" value="Clear Form" class="rounded" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
+
+                    </div>
+                <li>Example for table
+                    <div class="language-yaml highlighter-rouge">
+                        <div class="highlight"><pre class="pre"><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;label for="title"&gt;Title&lt;/label&gt;
+      &lt;br /&gt;
+      &lt;input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Give your photo a decriptive name"
+      /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;label for="description"&gt; Description &lt;/label&gt;
+      &lt;br /&gt;
+      &lt;textarea
+        id="description"
+        name="description"
+        rows="5"
+        cols="61"
+        placeholder="Adding a rich description will help with search results"
+      &gt;&lt;/textarea&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre></div>
+                    </div>
+                </li>
+                <img src="/images/HTMLTable.png" width="100%" height=auto alt="HTMLTable">
+                </div>
+            </div>
+            <a name="part3"></a>
+            <div class="container3">
+                <div class="text3 text">
+                    <div class="title3 title"></div>
+                    
+                </div>
+            </div>         
+        </div>
+    </div>	
+
+</div>
+
+<div class="container-fluid">
+    <div class="row-fluid">
+        <div class="span12 footer navbar-inverse navbar-fixed-bottom">
+            <p class="copyright">&copy;2021 CISC3003</p>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
+
+
+</body>
+　　</html>

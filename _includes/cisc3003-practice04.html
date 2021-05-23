@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>CISC3003: Practice 04</title>
+    <link href="{{ site.baseurl }}/css/sample.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <header>
+      <h1>Share Your Travels</h1>
+      <p>let us know where you've been</p>
+    </header>
+    <main>
+      <section>
+        <h2 style="display: none">This is a form</h2>
+        <form action="process.php">
+          <fieldset>
+            <legend>Photo Details</legend>
+            <table>
+              <tr>
+                <td colspan="2">
+                  <label for="title">Title</label>
+                  <br />
+                  <input
+                    type="text"
+                    name="title"
+                    id="title"
+                    placeholder="Give your photo a decriptive name"
+                  />
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <label for="description"> Description </label>
+                  <br />
+                  <textarea
+                    id="description"
+                    name="description"
+                    rows="5"
+                    cols="61"
+                    placeholder="Adding a rich description will help with search results"
+                  ></textarea>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="continent">Continent</label>
+                  <br />
+                  <select name="continent" id="continent">
+                    <option value="africa">Africa</option>
+                    <option value="asia">Asia</option>
+                    <option value="eu">Europe</option>
+                    <option value="NA">North America</option>
+                    <option value="SA">South America</option>
+                  </select>
+                  <br />
+                  <label for="country">Country</label>
+                  <br />
+                  <select name="country" id="country">
+                    <option value="canada">Canada</option>
+                    <option value="mexico">Mexico</option>
+                    <option value="united-states">United States</option>
+                  </select>
+                  <br />
+                  <label for="city">City</label>
+                  <br />
+                  <select name="city" id="city">
+                    <option value="calgary">Calgary</option>
+                    <option value="montreal">Montreal</option>
+                    <option value="toronto">Toronto</option>
+                    <option value="vancouver">Vancouver</option>
+                  </select>
+                  <br />
+                </td>
+                <td>
+                  <div class="wrapper">
+                    <label>Copyright?</label>
+                    <br />
+                    <input
+                      type="radio"
+                      name="reserved"
+                      id="reserved"
+                      value="reserved"
+                    />
+                    <label for="reserved">All rights reserved</label>
+                    <br />
+                    <input
+                      type="radio"
+                      name="commons"
+                      id="commons"
+                      value="commons"
+                    />
+                    <label for="commons">Creative Commons</label>
+                    <br />
+                  </div>
+                  <div class="wrapper">
+                    <label>Creative Commons Types</label>
+                    <br />
+                    <input type="checkbox" name="cc[]" value="1" />Attribution
+                    <br />
+                    <input type="checkbox" name="cc[]" value="2" />Noncommercial
+                    <br />
+                    <input type="checkbox" name="cc[]" value="3" />No Derivative
+                    Works <br />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="stripe">
+                    I accept the software license
+                    <input type="checkbox" name="accept-license" value="1" />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <label for="rate">Rate this photo: </label>
+                  <br />
+                  <input type="number" min="1" max="5" name="rate" id="rate" />
+                  <br />
+                  <label for="color">Color Collection:</label>
+                  <br />
+                  <input type="color" name="color" id="color" />
+                  <br />
+                </td>
+                <td>
+                  <div class="wrapper">
+                    <label for="date">Date taken:</label>
+                    <br />
+                    <input type="date" name="date" id="date" />
+                    <br />
+                    <label for="time">Time taken:</label>
+                    <br />
+                    <input type="time" name="time" id="time" />
+                    <br />
+                  </div>
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <div class="stripe">
+                    <input type="submit" value="Submit" class="rounded" />
+                    <input type="reset" value="Clear Form" class="rounded" />
+                  </div>
+                </td>
+              </tr>
+            </table>
+          </fieldset>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>

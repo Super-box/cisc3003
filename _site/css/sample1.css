@@ -1,0 +1,85 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Merriweather);
+
+
+/* general text formatting */
+.sample1 table {  
+   width: 90%;
+   margin: 0 auto;
+}
+.sample1 table tbody td{
+   vertical-align: top;
+}
+
+.sample1 legend {
+   background-color: #616161 ;
+    color: white;
+   margin: 0 auto;
+   width: 90%;
+   padding: 0.25em;
+   text-align: center;
+   font-weight: bold;
+   font-size: 24px;
+}
+.sample1 fieldset {
+   margin: 1em auto;
+   background-color: #F5F5F5;
+   width: 70%;
+}
+.sample1 form p {
+   margin-top: 0.5em;
+}
+.sample1 form input[type="text"], form select {
+    font-size: 16px;
+    height: 24px;
+    padding: 3px;
+}
+.sample1 form select {
+    height: 30px;
+}
+.sample1 #title, #description { width: 100% }
+.sample1 #medium, #museum { width: 90% }
+.sample1 #year { width: 40%; }
+
+
+.sample1 .box {
+   border: 1pt solid #9E9E9E;
+   padding: 0.5em;
+   margin-bottom: 0.4em;
+}
+
+.sample1 .rectangle {
+   background-color: #BDBDBD;
+   padding: 0.5em;
+    margin-bottom: 5px;
+}
+.sample1 .centered {
+   text-align: center;
+}
+.sample1 .highlight {
+    background-color: #FFE0B2;
+}    
+.sample1 .error {
+    background: #FFCDD2 url(error.png) no-repeat 98% center;
+    box-shadow: 0 0 5px #FF5252;
+    border-color: #FF1744;    
+}
+
+
+
+.sample1 .btn {
+  -webkit-border-radius: 3;
+  -moz-border-radius: 3;
+  border-radius: 3px;
+  height: 32px;
+  color: black;
+  font-size: 14px;
+  background: #FF9100;
+  padding: 5px 20px 5px 20px;
+  text-decoration: none;
+}
+
+.sample1 .btn:hover {
+  background: #FFAB40;
+  text-decoration: none;
+}

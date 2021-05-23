@@ -1,0 +1,87 @@
+---
+layout: default
+title: Start with HTML
+---
+{% include header.html %}
+
+<div class="control">
+    <div class="left">
+        <div class="subNav">
+        	{% for post in site.posts %}
+        		<div class="part1 part"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></div>
+        	{% endfor %}
+        </div>
+    </div>
+    <div class="content">
+        <a name="part1"></a>
+        <div class="container1">
+            <div class="text1 text">
+                <div class="title1 title"><h2>Start with HTML</h2></div>
+                	<h3>CISC3003 Practice 02: Share Your Travel Photos</h3>
+                	<p>In this Practice we learn how to use img tag</p>
+                	<li>Example for img
+                		<div class="language-yaml highlighter-rouge">
+                			<div class="highlight"><pre class="pre"><code>&lt;img src="/images/testlogo.png" alt="logo"&gt;</code></pre></div>
+                		</div>
+                	</li>
+                	<img src="/images/testlogo.png" alt="testlogo">
+                	<p>The first point is about Relative File Path and Absolute File Path</p>
+                	<img src="/images/HTMLFilePaths.png" width="100%" height=auto alt="HTMLFilePaths">
+            	</div>
+            </div>
+            <a name="part2"></a>
+            <div class="container2">
+                <div class="text2 text">
+                    <div class="title2 title"></div>
+                    <h3>CISC3003 Practice 04: Share Your Travel Photos</h3>
+                    <p>In this Practice we learn how to use table tag</p>
+                    <div class="sample">
+                        {% include cisc3003-practice04.html %}
+                    </div>
+                <li>Example for table
+                    <div class="language-yaml highlighter-rouge">
+                        <div class="highlight"><pre class="pre"><code>&lt;table&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;label for="title"&gt;Title&lt;/label&gt;
+      &lt;br /&gt;
+      &lt;input
+        type="text"
+        name="title"
+        id="title"
+        placeholder="Give your photo a decriptive name"
+      /&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+  &lt;tr&gt;
+    &lt;td colspan="2"&gt;
+      &lt;label for="description"&gt; Description &lt;/label&gt;
+      &lt;br /&gt;
+      &lt;textarea
+        id="description"
+        name="description"
+        rows="5"
+        cols="61"
+        placeholder="Adding a rich description will help with search results"
+      &gt;&lt;/textarea&gt;
+    &lt;/td&gt;
+  &lt;/tr&gt;
+&lt;/table&gt;</code></pre></div>
+                    </div>
+                </li>
+                <img src="/images/HTMLTable.png" width="100%" height=auto alt="HTMLTable">
+                </div>
+            </div>
+            <a name="part3"></a>
+            <div class="container3">
+                <div class="text3 text">
+                    <div class="title3 title"></div>
+                    
+                </div>
+            </div>         
+        </div>
+    </div>	
+
+</div>
+
+{% include footer.html %}

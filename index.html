@@ -8,7 +8,7 @@ title: Home
     <div class="left">
         <div class="subNav">
         	{% for post in site.posts %}
-        		<div class="part1 part"><a href="{{ site.baseurl}}{{ post.url }}">{{ post.title }}</a></div>
+        		<div class="part1 part"><a href="{{ post.url }}">{{ post.title }}</a></div>
         	{% endfor %}
         </div>
     </div>
